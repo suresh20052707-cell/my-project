@@ -1,0 +1,1445 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+form {
+    min-height: 100vh;
+    background-color: black;
+    color: snow;
+    font-family: "Space Grotesk", sans-serif;
+    overflow: hidden;
+}
+
+/* ----------- navi bar css ----------- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-family: Space;
+    position: sticky;
+    top: 0px;
+    animation-name: nav;
+    animation-duration: 1s;
+}
+
+nav a {
+    text-decoration: none;
+    /* color: snow; */
+     background: linear-gradient(to right, red, white);
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 34px;
+    transition: all;
+    transition-duration: 1s;
+}
+
+.subnav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 35px;
+    padding-right: 20px;
+}
+
+.subnav a {
+    text-decoration: none;
+    color: snow;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    transition: all;
+    transition-duration: 1s;
+}
+
+/* ------------- section css ----------- */
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+}
+
+/* --------------- left contact icon css ------------- */
+
+.left {
+    width: 130px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    left: 30px;
+    gap: 25px;
+    font-size: 20px;
+    animation: lefticon 1s;
+}
+
+/* ---------------- center content css ----------------- */
+main {
+    width: 1220px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -20px;
+    left: -20px;
+}
+
+/* ----------------- 4 box css ---------------- */
+
+.project {
+    width: 360px;
+    height: 250px;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    animation: box 1s 1.5s;
+    opacity: 0;
+    animation-fill-mode: both;
+}
+
+.project1 {
+   background-color: #282828;
+    border: 1px solid white;
+    order: 1;
+    left: 195px;
+}
+
+.project2 {
+    background-color: hsl(0, 0%, 16%);
+     border: 1px solid white;
+    order: 3;
+    right: 0px;
+}
+
+.project3 {
+    background-color: #282828;
+    order: 6;
+     border: 1px solid white;
+    align-items: end;
+    justify-content: center;
+    right: 50px;
+}
+
+.project4 {
+    background-color: #282828;
+    order: 8;
+     border: 1px solid white;
+    align-items: end;
+    justify-content: center;
+    right: 190px;
+}
+
+/* --------------- project container inner h1 tag css -------------- */
+h1 {
+    font-size: 25px;
+}
+
+.project h1:nth-child(2) {
+    font-size: 30px;
+}
+
+/* --------------- project container inner h2 tag css -------------- */
+.project1 h2,
+.project2 h2 {
+    padding-right: 140px;
+}
+
+.project4 h2 {
+
+    text-align: end;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+/* --------------- project container inner h3 tag css -------------- */
+h3 {
+    font-size: 16px;
+}
+
+/* ------------- project span tag css ------------ */
+span {
+    position: absolute;
+    top: 30px;
+    background-color: #282828;
+    left: 10px;
+    font-size: 16px;
+    /* background-color: #282828; */
+}
+
+.project3 span,
+.project4 span {
+    right: 10px;
+    text-align: end;
+    top: 28px;
+}
+
+.project4 span {
+    top: 38px;
+}
+
+/* ------------- arrow icon css  ------------- */
+.content {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+/* ---------------- p tag css --------------- */
+.tools,
+.details {
+    padding-left: 25px;
+    font-size: 12px;
+}
+
+.tools3,
+.details3,
+.tools4,
+.details4 {
+    padding-right: 25px;
+}
+
+.details {
+    width: 80%;
+}
+
+/* .details p{
+    font-size: 14px;
+} */
+.details1 p,
+.details2 p {
+    text-align: start;
+}
+
+.details3 p,
+.details4 p {
+    line-height: 20px;
+    text-align: end;
+}
+
+.tools2 p {
+    padding-right: 80px;
+}
+
+/* ------------------ image css ----------------- */
+.image {
+    width: 180px;
+    height: 180px;
+    background-image:repeating-linear-gradient(red,white 20%); 
+    padding: 10px;
+    position: relative;
+}
+
+
+ .image img:first-child,
+.project img {
+    animation: pin 1s;
+    animation-delay: 2.5s;
+    opacity: 0;
+    animation-fill-mode: both;
+} 
+
+
+
+.image1,
+.image1 img:last-child,
+.image2,
+.image2 img:last-child {
+    animation: university 1s 2.5s;
+    animation-fill-mode: both;
+    opacity: 1;
+}
+
+ .image,
+.image3 img:last-child,
+.image4,
+.image4 img:last-child {
+    animation: universitydiv 1s 2.5s;
+    animation-fill-mode: both;
+    opacity: 1;
+} 
+
+.image1 {
+    order: 2;
+    left: 110px;
+}
+
+.image2 {
+    order: 4;
+    left: -80px;
+}
+
+ .image1,
+.image2 {
+    transform: rotate(340deg);
+    top: -22px;
+}
+
+.image3,
+.image4 {
+    transform: rotate(20deg);
+    z-index: 1;
+    top: -20px; 
+}
+
+.image3 {
+    order: 5;
+    left: 220px;
+}
+
+.image4 {
+    order: 6;
+    left: 80px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.project img:nth-child(1) {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: -5px;
+    left: 150px;
+}
+
+.project3 img:nth-child(1) {
+    left: 220px;
+}
+
+.project4 img:nth-child(1) {
+    left: 170px;
+}
+
+.image img:first-child {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    z-index: 3;
+}
+
+.image1 img:first-child {
+    left: 70px;
+    top: -10px;
+}
+
+.image2 img:first-child {
+    left: 70px;
+    top: -10px;
+}
+
+.image img:last-child {
+    width: 160px;
+    height: 125px;
+
+}
+
+/* ------------ right scroll down css ------------------- */
+.right {
+    width: 50px;
+    height: 450px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 20px;
+}
+
+.right a {
+    width: 110px;
+    position: absolute;
+    text-decoration: none;
+    font-size: 18px;
+    color: snow;
+    bottom: 52px;
+    right: 0px;
+    transform: rotate(90deg);
+    animation-name: down;
+    animation-duration: 1.3s;
+}
+
+.right .fa-arrow-down {
+    position: absolute;
+    right: 45px;
+    bottom: 0px;
+    animation-name: scroll;
+    animation-duration: 1s;
+}
+
+/* -------- hover effects ------- */
+
+.subnav a:hover {
+      background-image:repeating-linear-gradient(to right,red,white 20%);  
+    color: black;
+    border-radius: 20px;
+    transform: scale(1.10);
+}
+
+/* nav a:hover {
+    transform: scale(0.9);
+} */
+
+.fa-brands {
+   font-size: 30px;
+    background: linear-gradient(to right, red, white);
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+/* -------------- animation css ------------ */
+
+/* ----------- nav css ----------- */
+ @keyframes nav {
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+} 
+
+/* ------------ left icon css ------------ */
+ 
+@keyframes lefticon {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+} 
+
+/* ---------- introduction css -----------  */
+ @keyframes details {
+    0% {
+        opacity: 0.2;
+        transform: translateX(300px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+} 
+
+/* ---------------- image css -------------- */
+
+ @keyframes image {
+    0% {
+        opacity: 0;
+        transform: translateY(-300px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+} 
+
+/* -------------- scroll down css ------------- */
+ 
+@keyframes scroll {
+    0% {
+        opacity: 0;
+        transform: translateY(-600px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+} 
+
+/* ------------ down css ---------- */
+
+ @keyframes down {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} 
+
+/* --------------- 2nd image css ------------- */
+
+ @keyframes design {
+    0% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} 
+
+ @keyframes pin {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+} 
+
+@keyframes box {
+    0% {
+        opacity: 0;
+        transform: translate(-500px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    }
+} 
+@keyframes university {
+    0% {
+        opacity: 0;
+        transform: scale(5), rotate(340deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.1), rotate(340deg);
+    }
+} 
+
+@keyframes universitydiv {
+    0% {
+        opacity: 0;
+        transform: scale(5), rotate(20deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.1), rotate(20deg);
+    }
+} 
+
+/* ---------- mobile 3 line icone css ---------- */
+input:checked~.subnav {
+    right: 10px;
+    z-index: 5;
+}
+
+input {
+    display: none;
+}
+
+label {
+    display: none;
+}
+
+.fa-bars {
+    font-size: 30px;
+}
+
+/* ------------- mobile screen ---------- */
+
+@media only screen and (max-width:350px) {
+    main {
+        width: 600px;
+        height: 265vh;
+        row-gap: 0px;
+        /* padding-left: 30px; */
+        grid-template-columns: auto auto;
+    }
+
+    nav {
+        z-index: 9;
+    }
+
+    .subnav {
+        width: 60%;
+        height: 35vh;
+        background-color: rgba(255, 255, 255, 0.4);
+        position: fixed;
+        right: -90%;
+        top: 90px;
+        gap: 15px;
+        padding: 25px;
+        flex-direction: column;
+        justify-content: start;
+        border-radius: 30px;
+        transition: all 0.8s;
+    }
+
+    .subnav a {
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    label {
+        display: block;
+    }
+
+    .left {
+        width: 260px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        position: absolute;
+        bottom: 0px;
+        gap: 25px;
+        font-size: 20px;
+        animation: lefticon 1s;
+    }
+
+    .details {
+        width: 100%;
+    }
+
+    .project {
+        width: 250px;
+        height: 300px;
+    }
+
+    .project1 {
+        left: 10px;
+    }
+
+    .image {
+        width: 120px;
+        height: 125px;
+        top: -72px;
+    }
+
+    .image1 {
+        left: -70px;
+    }
+
+    .image1 img:first-child {
+        left: 0px;
+        top: -10px;
+    }
+
+    .project1 {
+        order: 1;
+    }
+
+    .image1 {
+        order: 2;
+        top: -110px;
+    }
+
+    .project2 {
+        order: 4;
+        right: 180px;
+        height: 250px;
+    }
+
+    .image2 {
+        order: 3;
+        transform: rotate(20deg);
+        left: 25px;
+        z-index: 1;
+        top: -85px;
+    }
+
+    .image2 img:first-child {
+        left: 85px;
+        top: -10px;
+    }
+
+    .project3 {
+        width: 225px;
+        height: 330px;
+        order: 5;
+        right: -10px;
+        align-items: start;
+    }
+
+    .project3 span {
+        text-align: start;
+    }
+
+    .project1 img:nth-child(1) {
+        left: 100px;
+    }
+
+    .project3 img:nth-child(1) {
+        left: 70px;
+    }
+
+    .image3 {
+        order: 6;
+        left: -65px;
+        top: -122px;
+        transform: rotate(340deg);
+    }
+
+    .project3 span {
+        top: 48px;
+    }
+
+    .image3 img:nth-child(1) {
+        top: -10px;
+        left: -10px;
+    }
+
+    .project4 {
+        order: 8;
+        right: 180px;
+    }
+
+    .content7,
+    .content8,
+    .contact9,
+    .tools3 {
+        flex-direction: row-reverse;
+    }
+
+    .content1 {
+        padding-left: 6px;
+        gap: 5px;
+    }
+
+    .tools2 {
+        padding-right: 20px;
+    }
+
+    .details3 {
+        width: 100%;
+    }
+
+    .details3 p {
+        text-align: start;
+    }
+
+    .image4 {
+        order: 7;
+        left: 30px;
+        top: -110px;
+    }
+
+    .image img:last-child {
+        width: 100px;
+        height: 85px;
+    }
+
+    .content4,
+    .content5,
+    .content6,
+    .contact6,
+    .tools2 {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: end;
+        justify-content: end;
+    }
+
+    .project2 h1:nth-child(2),
+    .project4 h1:nth-child(2) {
+        font-size: 30px;
+        text-align: end;
+    }
+
+    .project2 h2,
+    .project4 h2 {
+        padding-right: 0px;
+        padding-left: 60px;
+    }
+
+    .project2 span,
+    .project4 span {
+        left: 180px;
+    }
+
+    .project4 span {
+        top: 45px;
+    }
+
+    .tools2 p {
+        padding-right: 0px;
+    }
+
+    .details2 {
+        width: 100%;
+        padding: 0px 20px 0px 0px;
+    }
+
+    .details2 p {
+        text-align: end;
+    }
+
+    .right,
+    .left {
+        display: none;
+    }
+
+
+}
+
+
+/* ------------- mobile screen 351px to 415px ---------- */
+
+@media only screen and (min-width:351px) and (max-width:415px) {
+    main {
+        width: 600px;
+        height: 264vh;
+        row-gap: 0px;
+        grid-template-columns: auto auto;
+        padding-left: 40px;
+    }
+
+    nav {
+        z-index: 9;
+    }
+
+    .subnav {
+        width: 60%;
+        height: 35vh;
+        background-color: rgba(255, 255, 255, 0.4);
+        position: fixed;
+        right: -90%;
+        top: 90px;
+        gap: 15px;
+        padding: 25px;
+        flex-direction: column;
+        justify-content: start;
+        border-radius: 30px;
+        transition: all 0.8s;
+    }
+
+    .subnav a {
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    label {
+        display: block;
+    }
+
+    .left {
+        width: 260px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        position: absolute;
+        bottom: 0px;
+        gap: 25px;
+        font-size: 20px;
+        animation: lefticon 1s;
+    }
+
+    .details {
+        width: 100%;
+    }
+
+    .project {
+        width: 250px;
+        height: 300px;
+    }
+
+    .project1 {
+        left: 10px;
+    }
+
+    .image {
+        width: 120px;
+        height: 125px;
+        top: -72px;
+    }
+
+    .image1 {
+        left: -70px;
+    }
+
+    .image1 img:first-child {
+        left: 0px;
+        top: -10px;
+    }
+
+    .project1 {
+        order: 1;
+    }
+
+    .image1 {
+        order: 2;
+        top: -110px;
+    }
+
+    .project2 {
+        order: 4;
+        right: 180px;
+        height: 250px;
+    }
+
+    .image2 {
+        order: 3;
+        transform: rotate(20deg);
+        left: 25px;
+        z-index: 1;
+        top: -85px;
+    }
+
+    .image2 img:first-child {
+        left: 85px;
+        top: -10px;
+    }
+
+    .project3 {
+        width: 225px;
+        height: 330px;
+        order: 5;
+        right: -10px;
+        align-items: start;
+    }
+
+    .project3 span {
+        text-align: start;
+    }
+
+    .project1 img:nth-child(1) {
+        left: 100px;
+    }
+
+    .project3 img:nth-child(1) {
+        left: 70px;
+    }
+
+    .image3 {
+        order: 6;
+        left: -65px;
+        top: -122px;
+        transform: rotate(340deg);
+    }
+
+    .project3 span {
+        top: 48px;
+    }
+
+    .image3 img:nth-child(1) {
+        top: -10px;
+        left: -10px;
+    }
+
+    .project4 {
+        order: 8;
+        right: 180px;
+    }
+
+    .content7,
+    .content8,
+    .contact9,
+    .tools3 {
+        flex-direction: row-reverse;
+    }
+
+    .content1 {
+        padding-left: 6px;
+        gap: 5px;
+    }
+
+    .tools2 {
+        padding-right: 20px;
+    }
+
+    .details3 {
+        width: 100%;
+    }
+
+    .details3 p {
+        text-align: start;
+    }
+
+    .image4 {
+        order: 7;
+        left: 30px;
+        top: -110px;
+    }
+
+    .image img:last-child {
+        width: 100px;
+        height: 85px;
+    }
+
+    .content4,
+    .content5,
+    .content6,
+    .contact6,
+    .tools2 {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: end;
+        justify-content: end;
+    }
+
+    .project2 h1:nth-child(2),
+    .project4 h1:nth-child(2) {
+        font-size: 30px;
+        text-align: end;
+    }
+
+    .project2 h2,
+    .project4 h2 {
+        padding-right: 0px;
+        padding-left: 60px;
+    }
+
+    .project2 span,
+    .project4 span {
+        left: 180px;
+    }
+
+    .project4 span {
+        top: 45px;
+    }
+
+    .tools2 p {
+        padding-right: 0px;
+    }
+
+    .details2 {
+        width: 100%;
+        padding: 0px 20px 0px 0px;
+    }
+
+    .details2 p {
+        text-align: end;
+    }
+
+    .right,
+    .left {
+        display: none;
+    }
+
+
+}
+
+
+/* ------------- mobile screen 416px to 600px ---------- */
+
+@media only screen and (min-width:416px) and (max-width:600px) {
+    main {
+        width: 600px;
+        height: 257vh;
+        row-gap: 0px;
+        grid-template-columns: auto auto;
+        padding-left: 70px;
+    }
+
+    nav {
+        z-index: 9;
+    }
+
+    .subnav {
+        width: 60%;
+        height: 35vh;
+        background-color: rgba(255, 255, 255, 0.4);
+        position: fixed;
+        right: -90%;
+        top: 90px;
+        gap: 15px;
+        padding: 25px;
+        flex-direction: column;
+        justify-content: start;
+        border-radius: 30px;
+        transition: all 0.8s;
+    }
+
+    .subnav a {
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    label {
+        display: block;
+    }
+
+    .left {
+        width: 260px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        position: absolute;
+        bottom: 0px;
+        gap: 25px;
+        font-size: 20px;
+        animation: lefticon 1s;
+    }
+
+    .details {
+        width: 100%;
+    }
+
+    .project {
+        width: 250px;
+        height: 300px;
+    }
+
+    .project1 {
+        left: 10px;
+    }
+
+    .image {
+        width: 120px;
+        height: 125px;
+        top: -72px;
+    }
+
+    .image1 {
+        left: -70px;
+    }
+
+    .image1 img:first-child {
+        left: 0px;
+        top: -10px;
+    }
+
+    .project1 {
+        order: 1;
+    }
+
+    .image1 {
+        order: 2;
+        top: -110px;
+    }
+
+    .project2 {
+        order: 4;
+        right: 180px;
+        height: 250px;
+    }
+
+    .image2 {
+        order: 3;
+        transform: rotate(20deg);
+        left: 25px;
+        z-index: 1;
+        top: -85px;
+    }
+
+    .image2 img:first-child {
+        left: 85px;
+        top: -10px;
+    }
+
+    .project3 {
+        width: 225px;
+        height: 330px;
+        order: 5;
+        right: -10px;
+        align-items: start;
+    }
+
+    .project3 span {
+        text-align: start;
+    }
+
+    .project1 img:nth-child(1) {
+        left: 100px;
+    }
+
+    .project3 img:nth-child(1) {
+        left: 70px;
+    }
+
+    .image3 {
+        order: 6;
+        left: -65px;
+        top: -122px;
+        transform: rotate(340deg);
+    }
+
+    .project3 span {
+        top: 48px;
+    }
+
+    .image3 img:nth-child(1) {
+        top: -10px;
+        left: -10px;
+    }
+
+    .project4 {
+        order: 8;
+        right: 180px;
+    }
+
+    .content7,
+    .content8,
+    .contact9,
+    .tools3 {
+        flex-direction: row-reverse;
+    }
+
+    .content1 {
+        padding-left: 6px;
+        gap: 5px;
+    }
+
+    .tools2 {
+        padding-right: 20px;
+    }
+
+    .details3 {
+        width: 100%;
+    }
+
+    .details3 p {
+        text-align: start;
+    }
+
+    .image4 {
+        order: 7;
+        left: 30px;
+        top: -110px;
+    }
+
+    .image img:last-child {
+        width: 100px;
+        height: 85px;
+    }
+
+    .content4,
+    .content5,
+    .content6,
+    .contact6,
+    .tools2 {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: end;
+        justify-content: end;
+    }
+
+    .project2 h1:nth-child(2),
+    .project4 h1:nth-child(2) {
+        font-size: 30px;
+        text-align: end;
+    }
+
+    .project2 h2,
+    .project4 h2 {
+        padding-right: 0px;
+        padding-left: 60px;
+    }
+
+    .project2 span,
+    .project4 span {
+        left: 180px;
+    }
+
+    .project4 span {
+        top: 45px;
+    }
+
+    .tools2 p {
+        padding-right: 0px;
+    }
+
+    .details2 {
+        width: 100%;
+        padding: 0px 20px 0px 0px;
+    }
+
+    .details2 p {
+        text-align: end;
+    }
+
+    .right,
+    .left {
+        display: none;
+    }
+
+
+}
+
+/* ==================== 601px to 800px ==================== */
+
+@media only screen and (min-width:601px) and (max-width:800px) {
+    main {
+        height: 195vh;
+        grid-template-columns: auto auto;
+    }
+
+    nav {
+        z-index: 9;
+    }
+
+    .subnav {
+        width: 45%;
+        height: 35vh;
+        background-color: rgba(255, 255, 255, 0.4);
+        position: fixed;
+        right: -90%;
+        top: 90px;
+        gap: 15px;
+        padding: 25px;
+        flex-direction: column;
+        justify-content: start;
+        border-radius: 30px;
+        transition: all 0.8s;
+    }
+
+    .subnav a {
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    label {
+        display: block;
+    }
+
+    .project {
+        left: 60px;
+    }
+
+    .project3 {
+        left: -175px;
+    }
+
+    .project4 {
+        left: -175px;
+    }
+
+    .project3 img:nth-child(1) {
+        left: 170px;
+    }
+
+    .image1 {
+        left: -15px;
+    }
+
+    .image2 {
+        left: -15px;
+        top: -20px;
+    }
+
+    .image3 {
+        left: 90px;
+        top: -22px;
+    }
+
+    .left {
+        display: none;
+    }
+}
+
+
+/* ===================== 801px to 1000px ====================== */
+
+@media only screen and (min-width:801px) and (max-width:1000px) {
+    main {
+        height: 175vh;
+        grid-template-columns: auto auto;
+        padding-left: 50px;
+    }
+
+    nav {
+        z-index: 9;
+    }
+
+    .subnav {
+        width: 30%;
+        height: 35vh;
+        background-color: rgba(255, 255, 255, 0.4);
+        position: fixed;
+        right: -90%;
+        top: 90px;
+        gap: 15px;
+        padding: 25px;
+        flex-direction: column;
+        justify-content: start;
+        border-radius: 30px;
+        transition: all 0.8s;
+    }
+
+    .subnav a {
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    label {
+        display: block;
+    }
+
+    .left {
+        display: none;
+    }
+}
+
+/* ===================== 1001px to 1100px ==================== */
+
+@media only screen and (min-width:1001px) and (max-width:1100px) {
+    main {
+        /* width: 205vh; */
+        left: -8%;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .project2 {
+        right: 18px;
+    }
+
+    .image2 {
+        left: -105px;
+    }
+
+    .image4 {
+        left: 5px;
+    }
+
+    .project4 {
+        left: -270px;
+    }
+}
+
+/* ======================= 1101px to 1200px ==================== */
+
+@media only screen and (min-width:1101px) and (max-width:1200px) {
+    main {
+        left: -7%;
+    }
+
+    .left {
+        display: none;
+    }
+}

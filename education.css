@@ -1,0 +1,773 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+form {
+    min-height: 100vh;
+    background-color: black;
+    color: snow;
+    font-family: "Space Grotesk", sans-serif;
+    overflow: hidden;
+}
+
+/* ----------- navi bar css ----------- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 18px;
+    font-family: Space;
+    position: sticky;
+    top: 0px;
+    animation-name: nav;
+    animation-duration: 1s;
+}
+
+nav a {
+    text-decoration: none;
+    /* color: snow; */
+     background: linear-gradient(to right, red, white);
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 34px;
+    transition: all;
+    transition-duration: 1s;
+}
+
+.subnav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 35px;
+    padding-right: 20px;
+}
+
+.subnav a {
+    text-decoration: none;
+    color: snow;
+    font-size: 22px;
+    padding: 5px 10px 5px 10px;
+    transition: all;
+    transition-duration: 1s;
+}
+
+/* ------------- section css ----------- */
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 15px;
+    position: relative;
+}
+
+/* --------------- left contact icon css ------------- */
+
+.left {
+    width: 130px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    left: 30px;
+    gap: 25px;
+    font-size: 20px;
+    animation: lefticon 1s;
+}
+
+/* ---------------- center content css ----------------- */
+main {
+    width: 1330px;
+    height: 560px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    right: -50px;
+}
+
+.experience,
+.education {
+    width: 520px;
+    height: 101vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -10px;
+}
+
+.border {
+    width: 100%;
+    height: 100%;
+    border: 8px solid snow;
+     
+
+}
+
+.border1 {
+    width: 90%;
+    position: relative;
+    left: -100px;
+}
+
+.border2 {
+    width: 20%;
+    position: relative;
+    left: -175px;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: snow;
+    z-index: 10;
+}
+
+.dot1 {
+    top: 20px;
+    left: -14px;
+}
+
+.dot2 {
+    bottom: 40px;
+    left: -14px;
+}
+
+.experience {
+    animation: experience 1s;
+}
+
+.dataexperience {
+    width: 490px;
+    height: 462px;
+    position: absolute;
+    left: -50px;
+    top: 39px;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.web {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+}
+
+.experience h1 {
+    position: relative;
+    top: -300px;
+     background: linear-gradient(to right, red, white);
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    right: -170px;
+    transform: rotate(90deg);
+    font-size: 65px;
+    animation: experienceh1 1s;
+}
+
+/* ------------ education container css ----------- */
+.education {
+    animation: education 1s;
+}
+
+
+.dataeducation {
+    width: 436px;
+    height: 515px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 15px;
+}
+
+.date {
+    height: 30px;
+}
+
+.grade {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.education h1 {
+    position: relative;
+    top: -300px;
+    left: -260px;
+    transform: rotate(270deg);
+     background: linear-gradient(to right, red, white);
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 65px;
+    animation: educationh1 1s;
+}
+
+span {
+    background-image:linear-gradient(red,white);
+    color: black;
+    border-radius: 25px;
+    padding: 5px;
+    font-weight: 550;
+    font-size: 16px;
+}
+
+.dot3 {
+    top: 5px;
+    right: -14px;
+    z-index: 3;
+}
+
+.dot4 {
+    bottom: 5px;
+    right: -14px;
+}
+.web p , .grade p{
+        font-size: 14px;
+    }
+    .web h2 , .grade h2{
+        font-size: 19px;
+    }
+    span{
+        font-size: 14px;
+    }
+    
+
+/* ------------ right scroll down css ------------------- */
+.right {
+    width: 50px;
+    height: 450px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 20px;
+}
+
+.right a {
+    width: 110px;
+    position: absolute;
+    text-decoration: none;
+    font-size: 18px;
+    color: snow;
+    bottom: 52px;
+    right: 0px;
+    transform: rotate(90deg);
+    animation-name: down;
+    animation-duration: 1.3s;
+}
+
+.right .fa-arrow-down {
+    position: absolute;
+    right: 45px;
+    bottom: 0px;
+    animation-name: scroll;
+    animation-duration: 1s;
+}
+
+/* -------- hover effects ------- */
+
+.subnav a:hover {
+    background-image:repeating-linear-gradient(to right,red,white 20%);
+    color: black;
+    border-radius: 20px;
+    transform: scale(1.10);
+}
+
+
+
+.fa-brands {
+    font-size: 30px;
+      background: linear-gradient(to right, red, white);
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    
+}
+
+
+
+/* -------------- animation css ------------ */
+
+/* ----------- nav css ----------- */
+
+ @keyframes nav {
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+} 
+
+/* ------------ left icon css ------------ */
+
+ @keyframes lefticon {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+} 
+
+/* ---------- introduction css -----------  */
+@keyframes details {
+    0% {
+        opacity: 0.2;
+        transform: translateX(300px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+} 
+
+/* ---------------- image css -------------- */
+
+@keyframes image {
+    0% {
+        opacity: 0;
+        transform: translateY(-300px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+} 
+
+/* -------------- scroll down css ------------- */
+
+ @keyframes scroll {
+    0% {
+        opacity: 0;
+        transform: translateY(-600px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+} 
+
+/* ------------ down css ---------- */
+
+ @keyframes down {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} 
+
+/* --------------- 2nd image css ------------- */
+
+ @keyframes design {
+    0% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} 
+
+ @keyframes experience {
+    0% {
+        opacity: 0;
+        transform: translateX(-600px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+} 
+
+ @keyframes education {
+    0% {
+        opacity: 0;
+        transform: translateX(600px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+} 
+
+ @keyframes experienceh1 {
+    0% {
+        opacity: 0;
+        transform: translateY(-600px);
+         transform: rotate(90deg); 
+     }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+        transform: rotate(90deg);
+    }
+}  
+
+ @keyframes educationh1 {
+    0% {
+        opacity: 0;
+        transform: translateY(600px);
+         transform: rotate(270deg);
+     }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+        transform: rotate(270deg);
+    }
+} 
+
+/* ---------- mobile 3 line icone css ---------- */
+input:checked~.subnav {
+    right: 10px;
+    z-index: 5;
+}
+
+input {
+    display: none;
+}
+
+label {
+    display: none;
+}
+.fa-bars{
+    font-size: 30px;
+}
+
+/* =============================== mobile screen media query responsive ================================ */
+
+@media only screen and (max-width:600px) {
+    form {
+        min-height: 270vh;
+    }
+    .web p , .grade p{
+        font-size: 12px;
+    }
+    main{
+        width: 100%;
+        height: 100%;
+    }
+    nav {
+        z-index: 9;
+    }
+
+    .subnav {
+        width: 45%;
+        height: 35vh;
+        background-color: rgba(255, 255, 255, 0.4);
+        position: fixed;
+        right: -90%;
+        top: 90px;
+        gap: 15px;
+        padding: 25px;
+        flex-direction: column;
+        justify-content: start;
+        border-radius: 30px;
+        transition: all 0.8s;
+    }
+
+    .subnav a {
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    label {
+        display: block;
+    }
+    section{
+        top: 40px;
+    }
+    .left {
+        display: none;
+    }
+
+    .experience,
+    .education {
+        width: 300px;
+        height: 140vh;
+    }
+
+    .border {
+        width: 70%;
+        height: 125vh;
+    }
+
+    .border2 {
+        width: 30%;
+        height: 125vh;
+        left: -40px;
+    }
+
+    .dataexperience {
+        width: 220px;
+        height: 604px;
+        left: -30px;
+        top: 40px;
+        gap: 15px;
+    }
+    .dataeducation{
+        width: 215px;
+        height: 640px;
+        top: 24px;
+        left: 15px;
+    }
+
+    .experience {
+        right: -15px;
+    }
+
+    .experience h1 {
+        position: relative;
+        top: -465px;
+        right: -50px;
+    }
+
+    .education h1 {
+        position: relative;
+        top: -470px;
+        left: -120px;
+    }
+
+    .web {
+        width: 200px;
+    }
+
+    .dot2 {
+        bottom: 36px;
+    }
+
+    .education {
+        left: -50px;
+    }
+}
+
+/* ==================================== 601px to 900px ================================== */
+
+@media only screen and (min-width:600px) and (max-width:900px) {
+    form {
+        min-height: 208vh;
+    }
+    main{
+        height: 210vh;
+        gap: 0px;
+    }
+
+    nav {
+        z-index: 9;
+    }
+
+    .subnav {
+        width: 35%;
+        height: 35vh;
+        background-color: rgba(255, 255, 255, 0.4);
+        position: fixed;
+        right: -90%;
+        top: 90px;
+        gap: 15px;
+        padding: 25px;
+        flex-direction: column;
+        justify-content: start;
+        border-radius: 30px;
+        transition: all 0.8s;
+    }
+
+    .subnav a {
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    label {
+        display: block;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .experience {
+        height: 108vh;
+        right: -25px;
+        top: 25px;
+    }
+    .experience h1{
+        top: -350px;
+    }
+    .dataexperience{
+        width: 500px;
+        height: 408px;
+    }
+    .education {
+        height: 117vh;
+        left: -50px;
+    }
+    .education h1{
+        top: -370px;
+    }
+    .dataeducation{
+        height:513px;
+        top: 24px;
+    }
+    .grade , .webp{
+        font-size: 13px;
+    }
+}
+
+/* ===================== 900px to 1080px ===================== */
+
+@media only screen and (min-width:901px) and (max-width:1080px){
+    main{
+        height: 208vh;
+        position: relative;
+        right: -75px;
+        top: 25px;
+    }
+    .experience{
+        top: -10px;
+    }
+    .education{
+        left: -70px;
+    }
+    .experience , .education{
+        width: 500px;
+        height: 107vh;
+    }
+    .dataexperience{
+        height: 500px;
+        left: -60px;
+    }
+    .dataeducation{
+        width: 490px;
+        height: 545px;
+        top: 25px;
+    }
+    .left{
+        display: none;
+    }
+}
+
+/* ================== 1081px to 1230px ================= */
+
+@media only screen and (min-width:1081px) and (max-width:1230px){
+    main{
+        /* height: 200vh; */
+        gap: 15px;
+        /* gap: 30px; */
+    }
+    .left , .right{
+        display: none;
+    }
+    .border1{
+        width: 95%;
+    }
+    .dataexperience{
+        width: 458px;
+        height: 485px;
+        left: -30px;
+        top: 33px;
+    }
+    .education , .experience{
+        width: 470px;
+    }
+    .experience{
+        left: -5px;
+    }
+    .experience h1{
+        left: 160px;
+        font-size: 60px;
+    }
+    .education h1{
+        font-size: 60px;
+
+    }
+    h1{
+        font-size: 18px;
+    }
+    .dataeducation{
+        width: 425px;
+        height: 520px;
+        left: 30px;
+        gap: 8px;
+        top: 24px;
+    }
+    span{
+        font-size: 14px;
+    }
+    .web p{
+        font-size: 13px;
+    }
+    .grade p{
+        font-size: 13px
+    }
+}
+
+/* =================== 1230px to 1330px =================== */
+
+@media only screen and (min-width:1231px) and (max-width:1330px){
+    main{
+       width: 1320px;
+        gap: 0px;
+        left: 45px;
+    }
+    .web p , .grade p{
+        font-size: 12px;
+    }
+    .web h2 , .grade h2{
+        font-size: 18px;
+    }
+    span{
+        font-size: 14px;
+    }
+    .dataeducation{
+        width: 420px;
+    }
+}
